@@ -219,7 +219,7 @@ body {
   position: relative;
 }
 .fondo-01 {
-  background-image: url("/images/keanu.jpg");
+  background-image: url("./images/keanu.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -259,7 +259,7 @@ header ul li a {
   color: rgba(255,255,255,0.8);
 }
 .fondo-02 {
-  background-image: url("/images/Suits.png");
+  background-image: url("./images/Suits.png");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: 20%;
@@ -318,21 +318,21 @@ header ul li a {
   position: relative;
 }
 .chico-01 {
-  background-image: url("/images/seccion-03-01.jpg");
+  background-image: url("./images/seccion-03-01.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
 .chico-02 {
-  background-image: url("/images/seccion-03-02.jpg");
+  background-image: url("./images/seccion-03-02.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
 .chico-03 {
-  background-image: url("/images/seccion-03-03.jpg");
+  background-image: url("./images/seccion-03-03.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
