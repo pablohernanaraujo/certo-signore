@@ -13,7 +13,7 @@ const reload = browserSync.reload;
 gulp.task('html', () => {
 	return gulp.src('src/jade/**/*.jade')
 		.pipe(plumber())
-		.pipe(jade({pretty: false}))
+		.pipe(jade({pretty: true}))
 		.pipe(gulp.dest('build/'))
 		.pipe(reload({stream: true}));
 });
