@@ -4,6 +4,7 @@ head
 	meta(charset="UTF-8")
 	meta(name='viewport', content='width=device-width, initial-scale=1.0')
 	title Documento Base
+	link(rel="stylesheet", href="./css/font-awesome.min.css")
 	link(rel="stylesheet", href="styles.css")
 	link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do")
 body
@@ -54,7 +55,24 @@ body
 			h2.historia-titulo Certo Signore
 			p.historia-texto Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
 
+	section.seccion
+		div.contenedor-footer
+			div.mapa
+			div.contenedor-formulario
+				div.formulario
+					form
+						input.input(placeholder="NOMBRE")
+						input.input(placeholder="EMAIL")
+						input.input(placeholder="CELULAR")
+						textarea.input(placeholder="ASUNTO", rows="4")
+						button.boton ENVIAR
 
+					div.contacto-email rubengalvan@certosignore.com
+					div.contacto-celular 1159481254
+					div.contenedor-socials
+						i.fa.fa-pinterest-p
+						i.fa.fa-facebook
+						i.fa.fa-twitter
 
 	script(src="scripts.js")
 	

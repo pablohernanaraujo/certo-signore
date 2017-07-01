@@ -229,11 +229,11 @@ header {
   position: fixed;
   top: 0;
   padding-top: 15px;
-  background: -webkit-linear-gradient(top, rgba(80,80,80,0.6) 0%, rgba(0,0,0,0) 100%);
-  background: -moz-linear-gradient(top, rgba(80,80,80,0.6) 0%, rgba(0,0,0,0) 100%);
-  background: -o-linear-gradient(top, rgba(80,80,80,0.6) 0%, rgba(0,0,0,0) 100%);
-  background: -ms-linear-gradient(top, rgba(80,80,80,0.6) 0%, rgba(0,0,0,0) 100%);
-  background: linear-gradient(to bottom, rgba(80,80,80,0.6) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
   z-index: 100;
 }
 header .titulo {
@@ -271,7 +271,7 @@ header ul li a {
   width: 22%;
 }
 .contenedor-tira .contenedor-texto {
-  margin: 100px 0;
+  margin: 20% 0;
 }
 .contenedor-tira .contenedor-texto .texto-titulo {
   color: rgba(0,0,0,0.8);
@@ -386,4 +386,111 @@ header ul li a {
   text-align: center;
   color: rgba(0,0,0,0.9);
   font-size: 20px;
+}
+.contenedor-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #dc143c;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contenedor-footer .mapa {
+  background-color: #ff7f50;
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -o-box-flex: 3;
+  box-flex: 3;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-image: url("./images/mapa.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.contenedor-footer .contenedor-formulario {
+  background-color: #202020;
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -o-box-flex: 2;
+  box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.contenedor-footer .contenedor-formulario .formulario {
+  width: 80%;
+}
+.contenedor-footer .contenedor-formulario .formulario .input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  background-color: #2b2b2b;
+  padding: 5px;
+  color: #e5c163;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #e5c163;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+.contenedor-footer .contenedor-formulario .formulario .input::-webkit-input-placeholder {
+  color: #e5c163;
+}
+.contenedor-footer .contenedor-formulario .formulario .input:focus {
+  background-color: #383838;
+}
+.contenedor-footer .contenedor-formulario .formulario .boton {
+  width: 100%;
+  background-color: #e5c163;
+  border: none;
+  font-weight: 800;
+  color: #2b2b2b;
+  padding: 8px 0 5px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.contenedor-footer .contenedor-formulario .formulario .contacto-email,
+.contenedor-footer .contenedor-formulario .formulario .contacto-celular,
+.contenedor-footer .contenedor-formulario .formulario .contenedor-socials {
+  color: #e5c163;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.contenedor-footer .contenedor-formulario .formulario i {
+  font-size: 22px;
+  padding: 0 6px;
+}
+textarea:focus,
+input:focus {
+  outline: none;
 }
