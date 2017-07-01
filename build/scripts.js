@@ -1,1 +1,1 @@
-function myFunction(n,o){console.log(n*o)}var x=myFunction(4,3);
+$(document).ready(function(){$(".button-collapse").sideNav(),$(".slider").slider(),$(".parallax").parallax()});

@@ -1,6 +1,6 @@
-/* comentario para sacar */
-var x = myFunction(4, 3);      
+$( document ).ready(function(){
 
-function myFunction(a, b) {
-    console.log(a * b);                
-}
+    $(".button-collapse").sideNav();
+    $('.slider').slider();
+    $('.parallax').parallax();
+});

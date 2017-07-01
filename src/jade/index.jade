@@ -3,25 +3,68 @@ html(lang="es")
 head
 	meta(charset="UTF-8")
 	meta(name='viewport', content='width=device-width, initial-scale=1.0')
-	title Documento Base
-	link(rel="stylesheet", href="./css/font-awesome.min.css")
-	link(rel="stylesheet", href="styles.css")
+	title Certo Signore
 	link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do")
+	link(rel="stylesheet", href="./css/font-awesome.min.css")
+	link(rel="stylesheet", href="./css/materialize.min.css")
+	link(rel="stylesheet", href="styles.css")
+	
 body
-	section.seccion.fondo-01
-		header
-			h1.titulo Certo Signore
-			ul
-				li
-					a(href="#") COSTURA
-				li
-					a(href="#") TRAJES
-				li
-					a(href="#") HISTORIA
-				li
-					a(href="#") CONTACTO
+	div.se-pre-con
+		div.preloader-wrapper.active
+			div.spinner-layer.spinner-blue-only
+				div.circle-clipper.left
+					div.circle
+				div.gap-patch
+					div.circle
+				div.circle-clipper.right
+					div.circle
 
-	section.seccion.fondo-02
+	div.navbar-fixed
+		nav.z-depth-0
+			div.nav-wrapper
+				a.brand-logo(href="#!") Certo Signore
+				a.button-collapse(href="#", data-activates="mobile-demo")
+					i.fa.fa-bars
+				ul.right.hide-on-med-and-down
+					li
+						a(href="#") COSTURA
+					li
+						a(href="#") TRAJES
+					li
+						a(href="#") HISTORIA
+					li
+						a(href="#") CONTACTO
+				ul.side-nav#mobile-demo
+					li
+						a(href="#") COSTURA
+					li
+						a(href="#") TRAJES
+					li
+						a(href="#") HISTORIA
+					li
+						a(href="#") CONTACTO
+
+	div.seccion
+		div.slider.fullscreen
+			ul.slides
+				li
+					img(src="./images/keanu.jpg")
+					div.caption.left-align
+						h3 Titulo sobre el traje
+						h5.light.grey-text.text-lighten-3 Texto descripcion sobre como se hizo el traje.
+				li
+					img(src="./images/tom.jpg")
+					div.caption.right-align
+						h3 Titulo sobre el traje
+						h5.light.grey-text.text-lighten-3 Texto descripcion sobre como se hizo el traje.
+				li
+					img(src="./images/brad.jpg")
+					div.caption.left-align
+						h3 Titulo sobre el traje
+						h5.light.grey-text.text-lighten-3 Texto descripcion sobre como se hizo el traje.
+						
+	div.seccion.fondo-02
 		div.contenedor-tira.tira-izquierda
 			div.contenedor-texto
 				h3.texto-titulo SHOULDER
@@ -73,6 +116,12 @@ body
 						i.fa.fa-pinterest-p
 						i.fa.fa-facebook
 						i.fa.fa-twitter
-
-	script(src="scripts.js")
 	
+
+	script(src="./js/jquery.min.js")
+	script(src="./js/materialize.min.js")
+	script(src="scripts.js")
+	script(type="text/javascript").
+		$(window).load(function() {
+			$(".se-pre-con").fadeOut("slow");
+		});
