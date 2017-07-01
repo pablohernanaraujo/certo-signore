@@ -3,24 +3,71 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Documento Base</title>
-  <link rel="stylesheet" href="./css/font-awesome.min.css"/>
-  <link rel="stylesheet" href="styles.css"/>
+  <title>Certo Signore</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do"/>
+  <link rel="stylesheet" href="./css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="./css/materialize.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <section class="seccion fondo-01">
-    <header>
-      <h1 class="titulo">Certo Signore</h1>
-      <ul>
-        <li><a href="#">COSTURA</a></li>
-        <li><a href="#">TRAJES</a></li>
-        <li><a href="#">HISTORIA</a></li>
-        <li><a href="#">CONTACTO</a></li>
+  <div class="se-pre-con">
+    <div class="preloader-wrapper active">
+      <div class="spinner-layer spinner-blue-only">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-fixed">
+    <nav class="z-depth-0">
+      <div class="nav-wrapper"><a href="#!" class="brand-logo">Certo Signore</a><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fa fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">COSTURA</a></li>
+          <li><a href="#">TRAJES</a></li>
+          <li><a href="#">HISTORIA</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+        <ul id="mobile-demo" class="side-nav">
+          <li><a href="#">COSTURA</a></li>
+          <li><a href="#">TRAJES</a></li>
+          <li><a href="#">HISTORIA</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="seccion">
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li><img src="./images/keanu.jpg"/>
+          <div class="caption left-align">
+            <h3>Titulo sobre el traje</h3>
+            <h5 class="light grey-text text-lighten-3">Texto descripcion sobre como se hizo el traje.</h5>
+          </div>
+        </li>
+        <li><img src="./images/tom.jpg"/>
+          <div class="caption right-align">
+            <h3>Titulo sobre el traje</h3>
+            <h5 class="light grey-text text-lighten-3">Texto descripcion sobre como se hizo el traje.</h5>
+          </div>
+        </li>
+        <li><img src="./images/brad.jpg"/>
+          <div class="caption left-align">
+            <h3>Titulo sobre el traje</h3>
+            <h5 class="light grey-text text-lighten-3">Texto descripcion sobre como se hizo el traje.</h5>
+          </div>
+        </li>
       </ul>
-    </header>
-  </section>
-  <section class="seccion fondo-02">
+    </div>
+  </div>
+  <div class="seccion fondo-02">
     <div class="contenedor-tira tira-izquierda">
       <div class="contenedor-texto">
         <h3 class="texto-titulo">SHOULDER</h3>
@@ -45,7 +92,7 @@
         <p class="texto">Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a</p>
       </div>
     </div>
-  </section>
+  </div>
   <section class="seccion">
     <div class="contenedor-fondos-chicos">
       <div class="fondo-chico chico-01">
@@ -84,5 +131,12 @@
       </div>
     </div>
   </section>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/materialize.min.js"></script>
   <script src="scripts.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+    	$(".se-pre-con").fadeOut("slow");
+    });
+  </script>
 </body>
