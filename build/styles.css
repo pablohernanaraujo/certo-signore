@@ -242,7 +242,7 @@ body {
 }
 .seccion {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -274,39 +274,61 @@ nav {
   .brand-logo {
     margin-left: 25px;
   }
+  .caption {
+    opacity: 0 !important;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)" !important;
+    filter: alpha(opacity=0) !important;
+  }
 }
 .fondo-02 {
   background-image: url("./images/Suits.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  -webkit-background-size: 20%;
-  -moz-background-size: 20%;
-  background-size: 20%;
-  background-color: #dcdcde;
 }
-.contenedor-tira {
-  width: 22%;
+.contenedor-tiras {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -o-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  color: rgba(0,0,0,0.5);
+  height: 100%;
 }
-.contenedor-tira .contenedor-texto {
-  margin: 20% 0;
+.contenedor-tiras .contenedor-texto {
+  padding: 5%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
-.contenedor-tira .contenedor-texto .texto-titulo {
-  color: rgba(0,0,0,0.8);
-  margin: 0;
-}
-.contenedor-tira .contenedor-texto .texto {
-  color: rgba(0,0,0,0.6);
-  margin: 5 0 0 0;
-}
-.tira-izquierda {
-  float: left;
-  margin-left: 15%;
-  margin-top: 3%;
-}
-.tira-derecha {
-  float: right;
-  margin-right: 15%;
-  margin-top: 10%;
+@media (max-width: 800px) {
+  .contenedor-tiras {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 .contenedor-fondos-chicos {
   display: -webkit-box;
@@ -322,7 +344,7 @@ nav {
   -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
-  height: 100%;
+  min-height: 400px;
 }
 .contenedor-fondos-chicos .fondo-chico {
   -webkit-box-flex: 1;
@@ -340,6 +362,7 @@ nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  height: 100vh;
 }
 .chico-02 {
   background-image: url("./images/seccion-03-02.jpg");
@@ -347,6 +370,7 @@ nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  height: 100vh;
 }
 .chico-03 {
   background-image: url("./images/seccion-03-03.jpg");
@@ -354,6 +378,7 @@ nav {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  height: 100vh;
 }
 .fondo-chico-titulo {
   position: absolute;
@@ -363,9 +388,19 @@ nav {
   color: rgba(255,255,255,0.8);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.4), 0 0 1px rgba(0,0,0,0.2);
 }
+@media (max-width: 800px) {
+  .contenedor-fondos-chicos {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
 .contenedor-historia {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -390,6 +425,7 @@ nav {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 30px;
 }
 .contenedor-historia .historia-titulo {
   color: #000;
@@ -404,6 +440,12 @@ nav {
   color: rgba(0,0,0,0.9);
   font-size: 20px;
 }
+@media (max-width: 800px) {
+  .contenedor-historia .historia-texto {
+    font-size: 14;
+    width: 100%;
+  }
+}
 .contenedor-footer {
   display: -webkit-box;
   display: -moz-box;
@@ -412,7 +454,7 @@ nav {
   display: box;
   display: flex;
   width: 100%;
-  height: 100%;
+  min-height: 100vH;
   background-color: #dc143c;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -510,4 +552,19 @@ nav {
 textarea:focus,
 input:focus {
   outline: none;
+}
+@media (max-width: 800px) {
+  .contenedor-footer {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .seccion {
+    min-height: 600px;
+  }
 }

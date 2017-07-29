@@ -23,29 +23,29 @@ body
 	div.navbar-fixed
 		nav.z-depth-0
 			div.nav-wrapper
-				a.brand-logo(href="#!") Certo Signore
-				a.button-collapse(href="#", data-activates="mobile-demo")
+				a.brand-logo(href="#inicio") Certo Signore
+				a.button-collapse(data-activates="mobile-demo")
 					i.fa.fa-bars
 				ul.right.hide-on-med-and-down
 					li
-						a(href="#") COSTURA
+						a(href="#costura") COSTURA
 					li
-						a(href="#") TRAJES
+						a(href="#trajes") TRAJES
 					li
-						a(href="#") HISTORIA
+						a(href="#historia") HISTORIA
 					li
-						a(href="#") CONTACTO
+						a(href="#contacto") CONTACTO
 				ul.side-nav#mobile-demo
 					li
-						a(href="#") COSTURA
+						a(href="#costura", onClick="$('.button-collapse').sideNav('hide')") COSTURA
 					li
-						a(href="#") TRAJES
+						a(href="#trajes", onClick="$('.button-collapse').sideNav('hide')") TRAJES
 					li
-						a(href="#") HISTORIA
+						a(href="#historia", onClick="$('.button-collapse').sideNav('hide')") HISTORIA
 					li
-						a(href="#") CONTACTO
+						a(href="#contacto", onClick="$('.button-collapse').sideNav('hide')") CONTACTO
 
-	div.seccion
+	div.seccion#inicio
 		div.slider.fullscreen
 			ul.slides
 				li
@@ -64,27 +64,34 @@ body
 						h3 Titulo sobre el traje
 						h5.light.grey-text.text-lighten-3 Texto descripcion sobre como se hizo el traje.
 						
-	div.seccion.fondo-02
-		div.contenedor-tira.tira-izquierda
+	div.seccion#costura
+		div.contenedor-tiras
 			div.contenedor-texto
-				h3.texto-titulo SHOULDER
-				p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+				div
+					h3.texto-titulo SHOULDER
+					p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+				div
+					h3.texto-titulo TROUSER BREAK
+					p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+				div
+					h3.texto-titulo SLEEVE LENGTH
+					p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+			div
+				img(src="images/Suits.png")
 			div.contenedor-texto
-				h3.texto-titulo SLEEVE LENGTH
-				p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
-			div.contenedor-texto
-				h3.texto-titulo TROUSER BREAK
-				p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+				div
+					h3.texto-titulo JACKET COLLAR
+					p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+				div
+					h3.texto-titulo TROUSER SEAT
+					p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
+		
+		
+	
+			
+		
 
-		div.contenedor-tira.tira-derecha
-			div.contenedor-texto
-				h3.texto-titulo JACKET COLLAR
-				p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
-			div.contenedor-texto
-				h3.texto-titulo TROUSER SEAT
-				p.texto Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a
-
-	section.seccion
+	section.seccion#trajes
 		div.contenedor-fondos-chicos
 			div.fondo-chico.chico-01
 				h3.fondo-chico-titulo STREET MAN
@@ -93,12 +100,12 @@ body
 			div.fondo-chico.chico-03
 				h3.fondo-chico-titulo URBAN BOY
 
-	section.seccion
+	section.seccion#historia
 		div.contenedor-historia
 			h2.historia-titulo Certo Signore
 			p.historia-texto Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
 
-	section.seccion
+	section.seccion#contacto
 		div.contenedor-footer
 			div.mapa
 			div.contenedor-formulario

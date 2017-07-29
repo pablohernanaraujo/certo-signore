@@ -2,7 +2,7 @@
   display flex
   flex-direction row
   width 100%
-  height 100%
+  min-height 400px
 
   & .fondo-chico
     flex 1
@@ -12,16 +12,19 @@
   ruta('seccion-03-01.jpg')
   background-repeat no-repeat
   background-size cover
+  height 100vh
 
 .chico-02
   ruta('seccion-03-02.jpg')
   background-repeat no-repeat
   background-size cover
+  height 100vh
 
 .chico-03
   ruta('seccion-03-03.jpg')
   background-repeat no-repeat
   background-size cover
+  height 100vh
 
 .fondo-chico-titulo
   position absolute
@@ -30,3 +33,7 @@
   font-size 30px
   color alpha(blanco, 0.8)
   text-shadow 2px 2px 4px alpha(negro, 0.4), 0 0 1px alpha(negro, 0.2)
+
+@media (max-width: 800px)
+  .contenedor-fondos-chicos
+    flex-direction column
